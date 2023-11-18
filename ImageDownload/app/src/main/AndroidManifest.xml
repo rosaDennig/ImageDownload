@@ -24,6 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".DownLoadImageService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="DOWNLOAD_AKTION"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
